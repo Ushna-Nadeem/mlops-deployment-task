@@ -3,20 +3,20 @@ name: Deploy to Vercel
 on:
   push:
     branches:
-      - main
+      - main # Deploy on pushes to the main branch
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Use the latest Ubuntu runner
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v3 # Check out the repository code
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v4 # Set up Python environment
       with:
-        python-version: '3.12'
+        python-version: '3.12' # Specify Python version
 
     - name: Install dependencies
       run: |
