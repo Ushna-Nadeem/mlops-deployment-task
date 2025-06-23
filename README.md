@@ -1,26 +1,55 @@
-# mlops-deployment-task
+# 🍪 Sweet or Savory Predictor – MLOps Deployment Task
 
-# Sweet or Savory Predictor
+A web application that uses a machine learning model to predict whether a food item is **sweet** or **savory** based on its ingredient quantities.
 
-Welcome to the Sweet or Savory Predictor project! This web application uses a machine learning model to predict whether a food is sweet or savory based on its ingredient quantities.
+---
 
-## Overview
+## 📌 Overview
 
 This project includes:
-- Model Training: A machine learning model trained to classify food as sweet or savory based on ingredient quantities.
-- Flask API: A backend API built with Flask to serve predictions.
-- Frontend: A simple web interface to input ingredient data and view predictions.
 
-## Project Structure
+* **🧠 Model Training:** Trains a classifier to predict food type using ingredients
+* **⚙️ Flask API:** Serves predictions via a lightweight backend
+* **🖥️ Frontend:** Simple HTML form for input and result display
 
-- `app.py`: The main Flask application file that serves the API endpoints.
-- `model.py`: The script to train and save the machine learning model.
-- `index.html`: The HTML file for the frontend interface.
-- `requirements.txt`: A file listing the project dependencies.
-- `.gitignore`: Specifies files and directories to be ignored by Git.
+---
 
-## How to Use
+## 📁 Project Structure
 
-- Enter Ingredient Quantities: In the web form, input the quantities of ingredients (flour, sugar, salt, butter) in grams, separated by commas.
-- Submit Form: Click the "Predict" button to send the data to the server.
-- View Prediction: The result will be displayed below the form, showing whether the food is predicted to be sweet or savory.
+| File               | Description                                 |
+| ------------------ | ------------------------------------------- |
+| `app.py`           | Flask app that serves the prediction API    |
+| `model.py`         | Trains and saves the machine learning model |
+| `index.html`       | Web UI for entering ingredient data         |
+| `requirements.txt` | Python dependencies                         |
+| `.gitignore`       | Files to ignore in version control          |
+
+---
+
+## 🚀 How to Use
+
+1. **Input Ingredients**
+
+   * Enter ingredient quantities in grams (e.g., `100, 50, 5, 20` for flour, sugar, salt, butter)
+
+2. **Click "Predict"**
+
+   * Submits the data to the backend Flask server
+
+3. **View Prediction**
+
+   * The app displays either **Sweet** 🍬 or **Savory** 🧂 based on the input
+
+---
+
+## 🛠 Setup Instructions
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+python app.py
+```
+
+Open your browser at **[http://localhost:5000](http://localhost:5000)** to use the app.
